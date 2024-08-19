@@ -1,0 +1,13 @@
+branches:
+  only:
+    master
+
+language: node_js
+node_js:
+  - "8"
+
+sudo: required
+services:
+  - docker
+
+script: ./travis.sh
